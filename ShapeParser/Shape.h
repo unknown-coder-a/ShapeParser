@@ -12,4 +12,3 @@ public:
 	virtual float getPerimeter() = 0;
 	void setPrinter(std::shared_ptr<IPrint> p);
 };
-

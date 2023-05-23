@@ -7,13 +7,17 @@ private:
 	float _height;
 
 public:
+	Triangle();
+	Triangle(float, float);
+
+public:
 	float width();
 	float height();
 	void setWidth(float);
 	void setHeight(float);
 
 public:
-		float getPerimeter() override;
-
+	float getPerimeter() override;
+	float getArea() override;
 };
 
