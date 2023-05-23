@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="IParser.cpp" />
     <ClCompile Include="IPrint.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ellipse.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="IParser.h" />
     <ClInclude Include="IPrint.h" />
