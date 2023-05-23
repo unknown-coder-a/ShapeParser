@@ -14,7 +14,7 @@ public:
 	void radius(float);
 
 public:
-	float getArea();
-	float getPerimeter();
+	float getArea() override;
+	float getPerimeter() override;
 };
 

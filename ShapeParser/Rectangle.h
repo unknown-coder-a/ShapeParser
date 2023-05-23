@@ -19,6 +19,6 @@ public:
 	float height();
 
 public:
-	float getArea();
-	float getPerimeter();
+	float getArea() override;
+	float getPerimeter() override;
 };
