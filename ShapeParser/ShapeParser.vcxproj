@@ -133,6 +133,7 @@
     <ClCompile Include="IPrint.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ellipse.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="IParser.h" />
     <ClInclude Include="IPrint.h" />
     <ClInclude Include="Shape.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
