@@ -1,5 +1,11 @@
 #pragma once
+
+//forward declare
+class Shape;
+
 class IPrint
 {
+public:
+	virtual void print(const Shape*& obj) = 0;
 };
 

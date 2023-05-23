@@ -8,7 +8,7 @@ private:
 public:
 	Shape();
 
-	virtual float getArea() = 0;
-	virtual float getPerimeter() = 0;
+	virtual float getArea() const = 0;
+	virtual float getPerimeter() const = 0;
 	void setPrinter(std::shared_ptr<IPrint> p);
 };
