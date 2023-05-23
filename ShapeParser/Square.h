@@ -6,9 +6,14 @@ private:
 	float _edge;
 
 public:
+	Square();
+	Square(float);
+
+public:
 	float edge();
 	void setEdge(float);
 
 public:
 	float getPerimeter() override;
+	float getArea() override;
 };
