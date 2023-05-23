@@ -9,19 +9,19 @@ Rhombus::Rhombus(float diagonal1, float diagonal2) {
 	_diagonal2 = diagonal2;
 }
 
-float Rhombus::diagnal1() {
+float Rhombus::diagonal1() {
 	return _diagonal1;
 }
 
-float Rhombus::diagnal2() {
+float Rhombus::diagonal2() {
 	return _diagonal2;
 }
 
-void Rhombus::setDiagnal1(float value) {
+void Rhombus::setDiagonal1(float value) {
 	_diagonal1 = value;
 }
 
-void Rhombus::setDiagnal2(float value) {
+void Rhombus::setDiagonal2(float value) {
 	_diagonal2 = value;
 }
 

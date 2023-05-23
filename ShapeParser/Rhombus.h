@@ -11,15 +11,16 @@ public:
 	Rhombus();
 	Rhombus(float, float);
 	
-
 public:
-	float diagnal1();
-	float diagnal2();
+	float diagonal1();
+	float diagonal2();
 
-	void setDiagnal1(float);
-	void setDiagnal2(float);
+	void setDiagonal1(float);
+	void setDiagonal2(float);
+
 public:
 	float getPerimeter() override;
 	float getArea() override;
+
 };
 
