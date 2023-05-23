@@ -4,5 +4,8 @@
 
 /.vs/ShapeParser/v17/Browse.VC.db-wal
 /.vs/ShapeParser/v17/Browse.VC.opendb
+<<<<<<< HEAD
 *.vsidx
 /.vs/ShapeParser/v17/ipch/AutoPCH/97bfacfaaf0943f/SHAPE.ipch
+=======
+>>>>>>> f4b8265675952c207880a4facfbf1d988066298d
