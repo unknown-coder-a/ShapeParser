@@ -66,6 +66,9 @@
     <ClCompile Include="shapes.txt">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="CirclePrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IParser.h">
@@ -103,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="Triangle.h">
       <Filter>Header Files\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="CirclePrinter.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
