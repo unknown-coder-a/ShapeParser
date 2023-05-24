@@ -36,7 +36,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Factory.cpp">
+    <ClCompile Include="ParserFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CirclePrinter.cpp">
@@ -83,7 +83,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Factory.h">
+    <ClInclude Include="ParserFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CirclePrinter.h">
@@ -131,5 +131,10 @@
     <ClInclude Include="RhombusPrinter.h">
       <Filter>Header Files\InterfacePrint</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shapes.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

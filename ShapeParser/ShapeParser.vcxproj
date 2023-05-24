@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,7 +132,7 @@
     <ClCompile Include="CirclePrinter.cpp" />
     <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="EllipsePrinter.cpp" />
-    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="ParserFactory.cpp" />
     <ClCompile Include="IParser.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectanglePrinter.cpp" />
@@ -149,7 +150,7 @@
     <ClInclude Include="CirclePrinter.h" />
     <ClInclude Include="Ellipse.h" />
     <ClInclude Include="EllipsePrinter.h" />
-    <ClInclude Include="Factory.h" />
+    <ClInclude Include="ParserFactory.h" />
     <ClInclude Include="IParser.h" />
     <ClInclude Include="IPrint.h" />
     <ClInclude Include="Rectangle.h" />
@@ -161,6 +162,9 @@
     <ClInclude Include="SquarePrinter.h" />
     <ClInclude Include="Triangle.h" />
     <ClInclude Include="TrianglePrinter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shapes.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
