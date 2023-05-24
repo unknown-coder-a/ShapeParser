@@ -81,6 +81,9 @@
     <ClCompile Include="EllipsePrinter.cpp">
       <Filter>Source Files\InterfacePrint</Filter>
     </ClCompile>
+    <ClCompile Include="FileExtracter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ParserFactory.h">
@@ -130,6 +133,9 @@
     </ClInclude>
     <ClInclude Include="RhombusPrinter.h">
       <Filter>Header Files\InterfacePrint</Filter>
+    </ClInclude>
+    <ClInclude Include="FileExtracter.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

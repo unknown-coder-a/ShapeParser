@@ -132,6 +132,7 @@
     <ClCompile Include="CirclePrinter.cpp" />
     <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="EllipsePrinter.cpp" />
+    <ClCompile Include="FileExtracter.cpp" />
     <ClCompile Include="ParserFactory.cpp" />
     <ClCompile Include="IParser.cpp" />
     <ClCompile Include="Rectangle.cpp" />
@@ -150,6 +151,7 @@
     <ClInclude Include="CirclePrinter.h" />
     <ClInclude Include="Ellipse.h" />
     <ClInclude Include="EllipsePrinter.h" />
+    <ClInclude Include="FileExtracter.h" />
     <ClInclude Include="ParserFactory.h" />
     <ClInclude Include="IParser.h" />
     <ClInclude Include="IPrint.h" />
