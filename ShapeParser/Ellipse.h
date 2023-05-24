@@ -1,6 +1,7 @@
 #pragma once
+#include "Shape.h"
 
-class Ellipse {
+class Ellipse : public Shape{
 private:
     float _minorAxis;
     float _majorAxis;
@@ -14,10 +15,10 @@ public:
     void setMajorAxis(float value);
     void setMinorAxis(float value);
     //getter
-    float minorAxis();
-    float majorAxis();
+    float minorAxis() const;
+    float majorAxis() const;
 
 public:
-    double getArea();
-    double getPerimeter();
+    float getArea() const;
+    float getPerimeter() const;
 };

@@ -1,0 +1,9 @@
+﻿  CirclePrinter.cpp
+  EllipsePrinter.cpp
+  RectanglePrinter.cpp
+  RhombusPrinter.cpp
+  Square.cpp
+  SquarePrinter.cpp
+  TrianglePrinter.cpp
+  Generating Code...
+  ShapeParser.vcxproj -> C:\code\ShapeParser\x64\Debug\ShapeParser.exe

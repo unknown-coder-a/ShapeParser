@@ -22,15 +22,18 @@
     <Filter Include="Header Files\InterfacePrint">
       <UniqueIdentifier>{e0d66395-b994-45bf-8a81-88c2c472ec44}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\InterfaceParser">
+      <UniqueIdentifier>{c84b2173-ebad-43ee-8e52-5afeb2c862a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\InterfaceParser">
+      <UniqueIdentifier>{24b3a0b1-58d3-49fb-8635-92e3320ae98d}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files\Shape">
       <UniqueIdentifier>{ffa83cc7-3b3f-42e0-be44-022cafa9166e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Factory.cpp">
@@ -63,14 +66,23 @@
     <ClCompile Include="Triangle.cpp">
       <Filter>Source Files\Shape</Filter>
     </ClCompile>
-    <ClCompile Include="shapes.txt">
-      <Filter>Resource Files</Filter>
+    <ClCompile Include="IParser.cpp">
+      <Filter>Source Files\InterfaceParser</Filter>
+    </ClCompile>
+    <ClCompile Include="TrianglePrinter.cpp">
+      <Filter>Source Files\InterfacePrint</Filter>
+    </ClCompile>
+    <ClCompile Include="SquarePrinter.cpp">
+      <Filter>Source Files\InterfacePrint</Filter>
+    </ClCompile>
+    <ClCompile Include="RhombusPrinter.cpp">
+      <Filter>Source Files\InterfacePrint</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipsePrinter.cpp">
+      <Filter>Source Files\InterfacePrint</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IParser.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Factory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -103,6 +115,21 @@
     </ClInclude>
     <ClInclude Include="Triangle.h">
       <Filter>Header Files\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="IParser.h">
+      <Filter>Header Files\InterfaceParser</Filter>
+    </ClInclude>
+    <ClInclude Include="TrianglePrinter.h">
+      <Filter>Header Files\InterfacePrint</Filter>
+    </ClInclude>
+    <ClInclude Include="EllipsePrinter.h">
+      <Filter>Header Files\InterfacePrint</Filter>
+    </ClInclude>
+    <ClInclude Include="SquarePrinter.h">
+      <Filter>Header Files\InterfacePrint</Filter>
+    </ClInclude>
+    <ClInclude Include="RhombusPrinter.h">
+      <Filter>Header Files\InterfacePrint</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

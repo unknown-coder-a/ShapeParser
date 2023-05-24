@@ -130,30 +130,37 @@
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="CirclePrinter.cpp" />
     <ClCompile Include="Ellipse.cpp" />
+    <ClCompile Include="EllipsePrinter.cpp" />
     <ClCompile Include="Factory.cpp" />
     <ClCompile Include="IParser.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectanglePrinter.cpp" />
     <ClCompile Include="Rhombus.cpp" />
+    <ClCompile Include="RhombusPrinter.cpp" />
     <ClCompile Include="Shape.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="shapes.txt" />
     <ClCompile Include="Square.cpp" />
+    <ClCompile Include="SquarePrinter.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="TrianglePrinter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="CirclePrinter.h" />
     <ClInclude Include="Ellipse.h" />
+    <ClInclude Include="EllipsePrinter.h" />
     <ClInclude Include="Factory.h" />
     <ClInclude Include="IParser.h" />
     <ClInclude Include="IPrint.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RectanglePrinter.h" />
     <ClInclude Include="Rhombus.h" />
+    <ClInclude Include="RhombusPrinter.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Square.h" />
+    <ClInclude Include="SquarePrinter.h" />
     <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TrianglePrinter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

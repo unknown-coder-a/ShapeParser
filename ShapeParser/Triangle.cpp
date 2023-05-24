@@ -22,21 +22,21 @@ void Triangle::setEdgeC(float c) {
 }
 
 //getter
-float Triangle::edgeA() {
+float Triangle::edgeA() const {
 	return _edgeA;
 }
-float Triangle::edgeB() {
+float Triangle::edgeB() const {
 	return _edgeB;
 }
-float Triangle::edgeC() {
+float Triangle::edgeC() const {
 	return _edgeC;
 }
 
-float Triangle::getArea() {
+float Triangle::getArea() const {
 	float s = getPerimeter() / 2;
 	return sqrt(s * (s - _edgeA) * (s - _edgeB) * (s - _edgeC));
 }
-float Triangle::getPerimeter() {
+float Triangle::getPerimeter() const {
 	return _edgeA + _edgeB + _edgeC;
 }
 

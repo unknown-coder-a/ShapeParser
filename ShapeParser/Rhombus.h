@@ -12,15 +12,15 @@ public:
 	Rhombus(float, float);
 	
 public:
-	float diagonal1();
-	float diagonal2();
+	float diagonal1() const;
+	float diagonal2() const;
 
 	void setDiagonal1(float);
 	void setDiagonal2(float);
 
 public:
-	float getPerimeter() override;
-	float getArea() override;
+	float getPerimeter() const override;
+	float getArea() const override;
 
 };
 
