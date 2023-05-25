@@ -26,5 +26,6 @@ int main() {
 	reader.printWithCaculatedProperties();
 	//pf->registerWith("Square", new SquareParser);
 	
+	std::string line;
 
 }
