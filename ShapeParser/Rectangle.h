@@ -15,10 +15,10 @@ public:
 	void setWidth(float);
 	void setHeight(float);
 
-	float width();
-	float height();
+	float width() const;
+	float height() const;
 
 public:
-	float getArea() override;
-	float getPerimeter() override;
+	float getArea() const override;
+	float getPerimeter() const override;
 };

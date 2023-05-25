@@ -13,11 +13,11 @@ Ellipse::Ellipse(float a, float b) {
     this->_majorAxis = b;
 }
 
-double Ellipse::getArea() {
+float Ellipse::getArea() const {
     return M_PI * _minorAxis * _majorAxis;
 }
 
-double Ellipse::getPerimeter() {
+float Ellipse::getPerimeter() const {
     double h = pow((_minorAxis - _majorAxis), 2) / pow((_minorAxis + _majorAxis), 2);
     return M_PI * (_minorAxis + _majorAxis) * (1 + (3 * h) / (10 + sqrt(4 - 3 * h)));
 }
@@ -30,9 +30,9 @@ void Ellipse::setMajorAxis(float value) {
     _majorAxis = value;
 }
 
-float Ellipse::minorAxis() {
+float Ellipse::minorAxis() const {
     return _minorAxis;
 }
-float Ellipse::majorAxis() {
+float Ellipse::majorAxis() const {
     return _majorAxis;
 }

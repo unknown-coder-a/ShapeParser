@@ -18,12 +18,12 @@ public:
 	void setEdgeC(float);
 
 	//getter
-	float edgeA();
-	float edgeB();
-	float edgeC();
+	float edgeA() const;
+	float edgeB() const;
+	float edgeC() const;
 
 public:
-	float getArea() override;
-	float getPerimeter() override;
+	float getArea() const override;
+	float getPerimeter() const override;
 };
 

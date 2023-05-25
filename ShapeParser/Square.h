@@ -10,10 +10,10 @@ public:
 	Square(float);
 
 public:
-	float edge();
+	float edge() const ;
 	void setEdge(float);
 
 public:
-	float getPerimeter() override;
-	float getArea() override;
+	float getPerimeter() const override;
+	float getArea() const override;
 };

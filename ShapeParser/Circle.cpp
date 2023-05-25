@@ -11,18 +11,18 @@ Circle::Circle(float value) {
 	_radius = value;
 }
 
-float Circle::getRadius() {
+float Circle::radius() const {
 	return _radius;
 }
 
-void Circle::radius(float value) {
+void Circle::setRadius(float value) {
 	_radius = value;
 }
 
-float Circle::getArea() {
+float Circle::getArea() const {
 	return M_PI * _radius;
 }
 
-float Circle::getPerimeter() {
+float Circle::getPerimeter() const {
 	return M_PI * 2 * _radius;
 }

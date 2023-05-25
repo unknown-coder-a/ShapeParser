@@ -10,11 +10,11 @@ public:
 	Circle(float);
 
 public:
-	float getRadius();
-	void radius(float);
+	float radius() const;
+	void setRadius(float);
 
 public:
-	float getArea() override;
-	float getPerimeter() override;
+	float getArea() const override;
+	float getPerimeter() const override;
 };
 

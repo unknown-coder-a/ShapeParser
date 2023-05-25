@@ -9,11 +9,11 @@ Rhombus::Rhombus(float diagonal1, float diagonal2) {
 	_diagonal2 = diagonal2;
 }
 
-float Rhombus::diagonal1() {
+float Rhombus::diagonal1() const {
 	return _diagonal1;
 }
 
-float Rhombus::diagonal2() {
+float Rhombus::diagonal2() const {
 	return _diagonal2;
 }
 
@@ -25,10 +25,10 @@ void Rhombus::setDiagonal2(float value) {
 	_diagonal2 = value;
 }
 
-float Rhombus::getArea() {
+float Rhombus::getArea() const {
 	return _diagonal1 * _diagonal2 / 2;
 }
 
-float Rhombus::getPerimeter() {
+float Rhombus::getPerimeter() const {
 	return 4 * (_diagonal1 * _diagonal2) / (_diagonal1 + _diagonal2);
 }

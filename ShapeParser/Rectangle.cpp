@@ -17,18 +17,18 @@ void Rectangle::setWidth(float value) {
 	_width = value;
 }
 
-float Rectangle::height() {
+float Rectangle::height() const {
 	return _height;
 }
 
-float Rectangle::width() {
+float Rectangle::width() const {
 	return _width;
 }
 
-float Rectangle::getArea() {
+float Rectangle::getArea() const {
 	return _width * _height;
 }
 
-float Rectangle::getPerimeter() {
+float Rectangle::getPerimeter() const {
 	return (_width + _height) * 2;
 }
