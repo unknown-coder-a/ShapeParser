@@ -66,9 +66,6 @@
     <ClCompile Include="Triangle.cpp">
       <Filter>Source Files\Shape</Filter>
     </ClCompile>
-    <ClCompile Include="IParser.cpp">
-      <Filter>Source Files\InterfaceParser</Filter>
-    </ClCompile>
     <ClCompile Include="TrianglePrinter.cpp">
       <Filter>Source Files\InterfacePrint</Filter>
     </ClCompile>
@@ -82,6 +79,9 @@
       <Filter>Source Files\InterfacePrint</Filter>
     </ClCompile>
     <ClCompile Include="FileExtracter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -135,6 +135,9 @@
       <Filter>Header Files\InterfacePrint</Filter>
     </ClInclude>
     <ClInclude Include="FileExtracter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleParser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
