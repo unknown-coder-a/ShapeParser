@@ -129,12 +129,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="CircleParser.cpp" />
     <ClCompile Include="CirclePrinter.cpp" />
     <ClCompile Include="Ellipse.cpp" />
     <ClCompile Include="EllipsePrinter.cpp" />
     <ClCompile Include="FileExtracter.cpp" />
     <ClCompile Include="ParserFactory.cpp" />
-    <ClCompile Include="IParser.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectanglePrinter.cpp" />
     <ClCompile Include="Rhombus.cpp" />
@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="CircleParser.h" />
     <ClInclude Include="CirclePrinter.h" />
     <ClInclude Include="Ellipse.h" />
     <ClInclude Include="EllipsePrinter.h" />
