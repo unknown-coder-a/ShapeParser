@@ -7,5 +7,5 @@ class IParser
 private:
 
 public:
-	virtual Shape* parse(std::string) = 0;
+	virtual Shape* parse(std::string) noexcept(false) = 0;
 };

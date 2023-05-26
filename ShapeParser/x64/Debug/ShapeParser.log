@@ -1,9 +1,341 @@
-﻿  CirclePrinter.cpp
+﻿  Circle.cpp
+C:\code\ShapeParser\ShapeParser\Circle.cpp(23,14): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\code\ShapeParser\ShapeParser\Circle.cpp(27,18): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  CircleParser.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  CirclePrinter.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  Ellipse.cpp
+C:\code\ShapeParser\ShapeParser\Ellipse.cpp(17,30): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\code\ShapeParser\ShapeParser\Ellipse.cpp(22,45): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  EllipseParser.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
   EllipsePrinter.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  FileExtracter.cpp
+C:\code\ShapeParser\ShapeParser\FileExtracter.cpp(49,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\code\ShapeParser\ShapeParser\FileExtracter.cpp(54,2): error C2059: syntax error: '}'
+C:\code\ShapeParser\ShapeParser\FileExtracter.cpp(56,21): error C2228: left of '.printWithRawProperties' must have class/struct/union
+C:\code\ShapeParser\ShapeParser\FileExtracter.cpp(56,45): error C2761: 'void FileExtracter::printWithRawProperties(void)': redeclaration of member is not allowed
+C:\code\ShapeParser\ShapeParser\FileExtracter.cpp(59,36): error C2228: left of '.shapesList' must have class/struct/union
+C:\code\ShapeParser\ShapeParser\FileExtracter.cpp(63,20): error C2228: left of '.unreadableCount' must have class/struct/union
+C:\code\ShapeParser\ShapeParser\FileExtracter.cpp(67,21): error C2228: left of '.setList' must have class/struct/union
+  ParserFactory.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  Rectangle.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  RectangleParser.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
   RectanglePrinter.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  Rhombus.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  RhombusParser.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
   RhombusPrinter.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  Shape.cpp
+C:\code\ShapeParser\ShapeParser\Shape.cpp(7,13): error C2511: 'void Shape::setPrinter(std::shared_ptr<IPrint>)': overloaded member function not found in 'Shape'
+C:\code\ShapeParser\ShapeParser\Shape.h(4,7): message : see declaration of 'Shape'
+C:\code\ShapeParser\ShapeParser\Shape.cpp(8,2): error C2597: illegal reference to non-static member 'Shape::_printer'
+C:\code\ShapeParser\ShapeParser\Shape.h(7,26): message : see declaration of 'Shape::_printer'
+  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
   Square.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  SquareParser.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
   SquarePrinter.cpp
-  TrianglePrinter.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  Triangle.cpp
+C:\code\ShapeParser\ShapeParser\Triangle.cpp(37,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
   Generating Code...
-  ShapeParser.vcxproj -> C:\code\ShapeParser\x64\Debug\ShapeParser.exe
+  Compiling...
+  TriangleParser.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  TrianglePrinter.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3392): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+C:\code\ShapeParser\ShapeParser\Shape.h(23): message : see reference to function template instantiation 'std::unique_ptr<IPrint,std::default_delete<IPrint>> std::make_unique<IPrint,_Ty&,0>(_Ty &)' being compiled
+          with
+          [
+              _Ty=IPrint
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): error C2259: 'IPrint': cannot instantiate abstract class
+C:\code\ShapeParser\ShapeParser\IPrint.h(6,7): message : see declaration of 'IPrint'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : due to following members:
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.35.32215\include\memory(3393,35): message : 'void IPrint::print(const Shape *&)': is abstract
+C:\code\ShapeParser\ShapeParser\IPrint.h(9,15): message : see declaration of 'IPrint::print'
+  Generating Code...

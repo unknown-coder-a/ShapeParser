@@ -4,10 +4,10 @@
 class PrintRhombusWithCalculatedProperties : public IPrint
 {
 public:
-	void print(const Shape*& p) override;
+	void print(Shape* p) override;
 };
 
 class PrintRhombusWithRawProperties : public IPrint {
 public:
-	void print(const Shape*& p) override;
+	void print( Shape* p) override;
 };

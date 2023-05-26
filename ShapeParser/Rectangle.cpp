@@ -1,4 +1,5 @@
 #include "Rectangle.h"
+#include "RectanglePrinter.h"
 
 Rectangle::Rectangle(){
 	_width = _height = 0;
@@ -31,4 +32,17 @@ float Rectangle::getArea() const {
 
 float Rectangle::getPerimeter() const {
 	return (_width + _height) * 2;
+}
+
+void  Rectangle::printWithRawProperties() {
+	setPrinter(std::make_unique<PrintRectangleWithRawProperties>());
+	if (_printer) {
+		_printer->print(this);
+	}
+}
+void  Rectangle::printWithCalculatedProperties() {
+	setPrinter(std::make_unique<PrintRectangleWithCalculatedProperties>());
+	if (_printer) {
+		_printer->print(this);
+	}
 }

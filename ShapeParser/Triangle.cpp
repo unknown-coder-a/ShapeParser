@@ -1,4 +1,5 @@
 #include "Triangle.h"
+#include "TrianglePrinter.h"
 
 Triangle::Triangle() {
 	_edgeA = 0;
@@ -40,3 +41,15 @@ float Triangle::getPerimeter() const {
 	return _edgeA + _edgeB + _edgeC;
 }
 
+void  Triangle::printWithRawProperties() {
+	setPrinter(std::make_unique<PrintTriangleWithRawProperties>());
+	if (_printer) {
+		_printer->print(this);
+	}
+}
+void  Triangle::printWithCalculatedProperties() {
+	setPrinter(std::make_unique<PrintTriangleWithCalculatedProperties>());
+	if (_printer) {
+		_printer->print(this);
+	}
+}

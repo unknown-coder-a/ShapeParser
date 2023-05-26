@@ -1,4 +1,5 @@
 #include "Rhombus.h"
+#include "RhombusPrinter.h"
 
 Rhombus::Rhombus() {
 	_diagonal1 = _diagonal2 = 0;
@@ -31,4 +32,17 @@ float Rhombus::getArea() const {
 
 float Rhombus::getPerimeter() const {
 	return 4 * (_diagonal1 * _diagonal2) / (_diagonal1 + _diagonal2);
+}
+
+void  Rhombus::printWithRawProperties() {
+	setPrinter(std::make_unique<PrintRhombusWithRawProperties>());
+	if (_printer) {
+		_printer->print(this);
+	}
+}
+void  Rhombus::printWithCalculatedProperties() {
+	setPrinter(std::make_unique<PrintRhombusWithCalculatedProperties>());
+	if (_printer) {
+		_printer->print(this);
+	}
 }

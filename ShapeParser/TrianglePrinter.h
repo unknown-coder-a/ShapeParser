@@ -4,10 +4,10 @@
 class PrintTriangleWithCalculatedProperties : public IPrint
 {
 public:
-	void print(const Shape*& p) override;
+	void print( Shape* p) override;
 };
 
 class PrintTriangleWithRawProperties : public IPrint {
 public:
-	void print(const Shape*& p) override;
+	void print( Shape* p) override;
 };

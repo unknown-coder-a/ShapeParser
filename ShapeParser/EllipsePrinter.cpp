@@ -11,7 +11,7 @@ void PrintEllipseWithCalculatedProperties::print(const Shape*& p) {
 
     std::wstring sProperties = L"Trục nhỏ=" + std::to_wstring(s->minorAxis()) + L", Trục lớn=" + std::to_wstring(s->majorAxis());
 
-    std::wcout << "| " << std::setw(15) << std::left << L"Hình Ê líp" << " | "
+    std::wcout << " | " << std::setw(15) << std::left << L"Hình Ê líp" << " | "
         << std::setw(25) << std::left << sProperties
         << " | " << L"Chu vi=" << std::setw(7) << std::left << std::fixed << std::setprecision(2)
         << s->getPerimeter() << " | " << L"Diện tích=" << std::setw(7) << std::left << std::fixed

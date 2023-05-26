@@ -6,6 +6,6 @@ class Shape;
 class IPrint
 {
 public:
-	virtual void print(const Shape*& p) = 0;
+	virtual void print(Shape* p) = 0;
 };
 

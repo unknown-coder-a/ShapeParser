@@ -4,10 +4,10 @@
 class PrintCircleWithCalculatedProperties : public IPrint
 {
 public:
-	void print(const Shape*& p) override;
+	void print(Shape* p) override;
 };
 
 class PrintCircleWithRawProperties : public IPrint {
 public:
-	void print(const Shape*& p) override;
+	void print(Shape* p) override;
 };

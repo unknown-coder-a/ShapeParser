@@ -36,9 +36,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ParserFactory.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CirclePrinter.cpp">
       <Filter>Source Files\InterfacePrint</Filter>
     </ClCompile>
@@ -46,9 +43,6 @@
       <Filter>Source Files\InterfacePrint</Filter>
     </ClCompile>
     <ClCompile Include="Circle.cpp">
-      <Filter>Source Files\Shape</Filter>
-    </ClCompile>
-    <ClCompile Include="Ellipse.cpp">
       <Filter>Source Files\Shape</Filter>
     </ClCompile>
     <ClCompile Include="Rectangle.cpp">
@@ -82,7 +76,28 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CircleParser.cpp">
+      <Filter>Source Files\InterfaceParser</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleParser.cpp">
+      <Filter>Source Files\InterfaceParser</Filter>
+    </ClCompile>
+    <ClCompile Include="RhombusParser.cpp">
+      <Filter>Source Files\InterfaceParser</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareParser.cpp">
+      <Filter>Source Files\InterfaceParser</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleParser.cpp">
+      <Filter>Source Files\InterfaceParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Ellipse.cpp">
+      <Filter>Source Files\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="ParserFactory.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EllipseParser.cpp">
+      <Filter>Source Files\InterfaceParser</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -138,7 +153,22 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CircleParser.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\InterfaceParser</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleParser.h">
+      <Filter>Header Files\InterfaceParser</Filter>
+    </ClInclude>
+    <ClInclude Include="EllipseParser.h">
+      <Filter>Header Files\InterfaceParser</Filter>
+    </ClInclude>
+    <ClInclude Include="RhombusParser.h">
+      <Filter>Header Files\InterfaceParser</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareParser.h">
+      <Filter>Header Files\InterfaceParser</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleParser.h">
+      <Filter>Header Files\InterfaceParser</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

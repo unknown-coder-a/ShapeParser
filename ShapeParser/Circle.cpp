@@ -1,6 +1,7 @@
 #define _USE_MATH_DEFINES
 
 #include "Circle.h"
+#include "CirclePrinter.h"
 #include <cmath>
 
 Circle::Circle() {
@@ -25,4 +26,17 @@ float Circle::getArea() const {
 
 float Circle::getPerimeter() const {
 	return M_PI * 2 * _radius;
+}
+
+void  Circle::printWithRawProperties() {
+	setPrinter(std::make_unique<PrintCircleWithRawProperties>());
+	if (_printer) {
+		_printer->print(this);
+	}
+}
+void  Circle::printWithCalculatedProperties() {
+	setPrinter(std::make_unique<PrintCircleWithCalculatedProperties>());
+	if (_printer) {
+		_printer->print(this);
+	}
 }

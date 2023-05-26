@@ -16,4 +16,7 @@ public:
 public:
 	float getPerimeter() const override;
 	float getArea() const override;
+
+	virtual void printWithRawProperties();
+	virtual void printWithCalculatedProperties();
 };

@@ -1,6 +1,7 @@
 #define _USE_MATH_DEFINES
 
 #include "Ellipse.h"
+#include "EllipsePrinter.h"
 #include <cmath>
 
 Ellipse::Ellipse() {
@@ -35,4 +36,17 @@ float Ellipse::minorAxis() const {
 }
 float Ellipse::majorAxis() const {
     return _majorAxis;
+}
+
+void Ellipse::printWithRawProperties() {
+    setPrinter(std::make_unique<PrintEllipseWithRawProperties>());
+    if (_printer) {
+        _printer->print(this);
+    }
+}
+void Ellipse::printWithCalculatedProperties() {
+    setPrinter(std::make_unique<PrintEllipseWithCalculatedProperties>());
+    if (_printer) {
+        _printer->print(this);
+    }
 }

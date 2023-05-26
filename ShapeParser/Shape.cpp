@@ -4,6 +4,7 @@ Shape::Shape() {
 	_printer = nullptr;
 }
 
-void Shape::setPrinter(std::shared_ptr<IPrint> p) {
-	_printer = p;
+void Shape::setPrinter(std::unique_ptr<IPrint> printer_) {
+	_printer = std::move(printer_);
 }
+

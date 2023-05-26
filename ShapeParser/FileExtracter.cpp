@@ -1,9 +1,11 @@
 #include "FileExtracter.h"
-
+#include <algorithm>
+#include <iostream>
 
 FileExtracter::FileExtracter() {
 	_unreadableCount = 0;
 }
+
 
 void FileExtracter::read(const std::string fileName) {
 	std::fstream file;
@@ -36,4 +38,44 @@ void FileExtracter::read(const std::string fileName) {
 	}
 
 	file.close();
+}
+
+void FileExtracter::sortByArea(){
+	
+	std::sort(_shapesList.begin(), _shapesList.end());
+}
+void FileExtracter::printWithCaculatedProperties() {
+
+	int count = _shapesList.size();
+
+	for (int i = 0; i < count; i++ ) {
+		std::cout << "| " << i;
+		_shapesList[i]->printWithCalculatedProperties();
+		std::cout << std::endl;
+	}
+}
+void FileExtracter::printWithRawProperties() {
+	int count = _shapesList.size();
+
+	for (int i = 0; i < count; i++) {
+		std::cout << i << ". ";
+		_shapesList[i]->printWithRawProperties();
+		std::cout << std::endl;
+	}
+}
+
+
+std::vector<Shape*> FileExtracter::shapesList() {
+	return _shapesList;
+}
+
+int FileExtracter::unreadableCount() {
+	return _unreadableCount;
+}
+
+void FileExtracter::setList(std::vector<Shape*> list) {
+	_shapesList = list;
+}
+void FileExtracter::setUnreadableCount(int value) {
+	_unreadableCount = value;
 }
