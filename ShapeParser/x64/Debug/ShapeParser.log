@@ -1,2 +1,5 @@
-﻿  FileExtracter.cpp
+﻿  ParserFactory.cpp
+  main.cpp
+  TriangleParser.cpp
+  Generating Code...
   ShapeParser.vcxproj -> C:\code\ShapeParser\x64\Debug\ShapeParser.exe

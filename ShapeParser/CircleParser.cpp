@@ -6,7 +6,7 @@ Shape* CircleParser::parse(std::string data) {
 	std::regex pattern("Circle: r=([0-9.]+)");
 	std::smatch matches;
 
-
+    
     if (std::regex_search(data, matches, pattern)) {
         float radius = stof(matches[1].str());
 

@@ -17,6 +17,9 @@ ParserFactory* ParserFactory::getInstance() {
 }
 
 void ParserFactory::registerWith(std::string type, IParser* pser) {
+	if(_prototypes.contains(type)){
+		return;
+	}
 	_prototypes.insert({ type, pser });
 }
 

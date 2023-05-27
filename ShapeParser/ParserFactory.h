@@ -1,8 +1,12 @@
-#pragma once
+﻿#pragma once
 #include <map>
 #include <string>
 #include "IParser.h"
 
+
+/// <summary>
+/// Singleton class
+/// </summary>
 class ParserFactory
 {
 private:
@@ -17,7 +21,18 @@ public:
 	static ParserFactory* getInstance();
 
 public:
-	void registerWith(std::string, IParser*);
+	/// <summary>
+	/// Hàm đăng ký shape parser với tên string tương ứng
+	/// </summary>
+	/// <param name="type">tên đăng ký</param>
+	/// <param name="pser">concrete parser pointer</param>
+	void registerWith(std::string type, IParser* pser);
+
+	/// <summary>
+	/// Hàm cho
+	/// </summary>
+	/// <param name=""></param>
+	/// <returns></returns>
 	IParser* select(std::string);
 };
 

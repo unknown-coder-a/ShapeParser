@@ -76,7 +76,7 @@ void FileExtracter::printWithTableList() {
 	size_t count = _shapesList.size();
 
 	for (int i = 0; i < count; i++ ) {
-		std::cout <<"| " <<std::setw(2)<<std::left<< i;
+		std::cout <<"| " <<std::setw(2)<< std::left<< i;
 		_shapesList[i]->printWithCalculatedProperties();
 		std::cout << std::endl;
 	}
