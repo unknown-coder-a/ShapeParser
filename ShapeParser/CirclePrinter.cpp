@@ -8,19 +8,26 @@
 void PrintCircleWithCalculatedProperties::print( Shape* p) {
     const Circle* s = dynamic_cast<const Circle*> (p);
 
+    std::string str1 = std::to_string(s->radius());
+    str1.erase(str1.find_last_not_of('0') + 1, std::string::npos);
+    str1.erase(str1.find_last_not_of('.') + 1, std::string::npos);
 
-    std::wstring sProperties = L"Cạnh=" + std::to_wstring(s->radius());
+    std::string sProperties = "Canh =" + str1;
 
-    std::wcout << " | " << std::setw(15) << std::left << L"Hình tròn" << " | "
-        << std::setw(25) << std::left << sProperties
-        << " | " << L"Chu vi=" << std::setw(7) << std::left << std::fixed << std::setprecision(2)
-        << s->getPerimeter() << " | " << L"Diện tích=" << std::setw(7) << std::left << std::fixed
-        << std::setprecision(2) << s->getArea() << " |" << std::endl;
+    std::cout << " | " << std::setw(15) << std::left << "Hinh tron" << " | "
+        << std::setw(30) << std::left << sProperties
+        << " | " << "Chu vi=" << std::setw(7) << std::left << std::fixed << std::setprecision(2)
+        << s->getPerimeter() << " | " << "Dien tich=" << std::setw(7) << std::left << std::fixed
+        << std::setprecision(2) << s->getArea() << " |";
 }
 
 void PrintCircleWithRawProperties::print( Shape* p) {
     const Circle* s = dynamic_cast<const Circle*> (p);
 
-    std::wstring sProperties = L"Cạnh=" + std::to_wstring(s->radius());
-    std::wcout << L"Hình tròn: " << sProperties;
+    std::string str1 = std::to_string(s->radius());
+    str1.erase(str1.find_last_not_of('0') + 1, std::string::npos);
+    str1.erase(str1.find_last_not_of('.') + 1, std::string::npos);
+
+    std::string sProperties = "Canh =" + str1;
+    std::cout << "Hinh tron: " << sProperties;
 }

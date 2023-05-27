@@ -3,7 +3,7 @@
 #include <regex>
 
 Shape* SquareParser::parse(std::string data) {
-    std::regex pattern("Square: r=([0-9.]+)");
+    std::regex pattern("Square: a=([0-9.]+)");
     std::smatch matches;
 
 

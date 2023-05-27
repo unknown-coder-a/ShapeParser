@@ -8,18 +8,34 @@
 void PrintRhombusWithCalculatedProperties::print( Shape* p) {
     const Rhombus* s = dynamic_cast<const Rhombus*> (p);
 
+    std::string str1 = std::to_string(s->diagonal1());
+    str1.erase(str1.find_last_not_of('0') + 1, std::string::npos);
+    str1.erase(str1.find_last_not_of('.') + 1, std::string::npos);
 
-    std::wstring sProperties = L"Trục 1=" + std::to_wstring(s->diagonal1()) + L", Trục 2=" + std::to_wstring(s->diagonal2());
+    std::string str2 = std::to_string(s->diagonal2());
+    str2.erase(str2.find_last_not_of('0') + 1, std::string::npos);
+    str2.erase(str2.find_last_not_of('.') + 1, std::string::npos);
 
-    std::wcout << " | " << std::setw(15) << std::left << L"Hình chữ nhật" << " | "
-        << std::setw(25) << std::left << sProperties
-        << " | " << L"Chu vi=" << std::setw(7) << std::left << std::fixed << std::setprecision(2)
-        << s->getPerimeter() << " | " << L"Diện tích=" << std::setw(7) << std::left << std::fixed
-        << std::setprecision(2) << s->getArea() << " |" << std::endl;
+    std::string sProperties = "Truc 1=" + str1 + ", Truc 2=" + str2;
+
+    std::cout << " | " << std::setw(15) << std::left << "Hinh thoi" << " | "
+        << std::setw(30) << std::left << sProperties
+        << " | " << "Chu vi=" << std::setw(7) << std::left << std::fixed << std::setprecision(2)
+        << s->getPerimeter() << " | " << "Dien tich=" << std::setw(7) << std::left << std::fixed
+        << std::setprecision(2) << s->getArea() << " |";
 }
 
 void PrintRhombusWithRawProperties::print( Shape* p) {
     const Rhombus* s = dynamic_cast<const Rhombus*> (p);
-    std::wstring sProperties = L"Trục 1=" + std::to_wstring(s->diagonal1()) + L", Trục 2=" + std::to_wstring(s->diagonal2());
-    std::wcout << L"Hình chữ nhật: " << sProperties;
+
+    std::string str1 = std::to_string(s->diagonal1());
+    str1.erase(str1.find_last_not_of('0') + 1, std::string::npos);
+    str1.erase(str1.find_last_not_of('.') + 1, std::string::npos);
+
+    std::string str2 = std::to_string(s->diagonal2());
+    str2.erase(str2.find_last_not_of('0') + 1, std::string::npos);
+    str2.erase(str2.find_last_not_of('.') + 1, std::string::npos);
+
+    std::string sProperties = "Truc 1=" + str1 + ", Truc 2=" + str2;
+    std::cout << "Hinh thoi: " << sProperties;
 }

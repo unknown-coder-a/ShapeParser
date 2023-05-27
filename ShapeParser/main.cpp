@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include "ParserFactory.h"
 
 #include "IParser.h"
@@ -7,23 +7,29 @@
 #include <memory>
 #include <string>
 
+
+
+//"Microsoft requires a bit of non - standard set - up with _setmode() before wcout or wcin can work."
+//vì vậy em sẽ không dùng wstring như trong đồ án thể hiện
+
 int main() {
 	const std::string filename = "shapes.txt";
 
 	FileExtracter reader;
+
 	try
 	{
 		reader.read(filename);
 	}
-	catch (const std::exception&)
+	catch (const std::exception& ex)
 	{
-		std::cout << "read file error";
+		std:: cout << ex.what();
 		return 1;
 	}
 	
 	reader.sortByArea();
-	reader.printWithCaculatedProperties();
+	std::cout << std::endl << std::endl;
 
-	std::string line;
+	reader.printWithTableList();
 
 }

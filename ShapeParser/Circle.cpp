@@ -21,7 +21,7 @@ void Circle::setRadius(double value) {
 }
 
 double Circle::getArea() const {
-	return M_PI * _radius;
+	return M_PI * _radius * _radius;
 }
 
 double Circle::getPerimeter() const {

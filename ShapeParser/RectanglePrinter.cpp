@@ -7,19 +7,37 @@
 
 void PrintRectangleWithCalculatedProperties::print( Shape* p) {
     const Rectangle* s = dynamic_cast<const Rectangle*> (p);
-    
-    
-    std::wstring sProperties = L"Rộng=" + std::to_wstring(s->width()) + L", Cao=" + std::to_wstring(s->height());
 
-    std::wcout << " | " << std::setw(15) << std::left << L"Hình chữ nhật" << " | "
-        << std::setw(25) << std::left << sProperties
-        << " | " << L"Chu vi=" << std::setw(7) << std::left << std::fixed << std::setprecision(2)
-        << s->getPerimeter() << " | " << L"Diện tích=" << std::setw(7) << std::left << std::fixed
-        << std::setprecision(2) << s->getArea() << " |" << std::endl;
+    std::string str1 = std::to_string(s->width());
+    str1.erase(str1.find_last_not_of('0') + 1, std::string::npos);
+    str1.erase(str1.find_last_not_of('.') + 1, std::string::npos);
+
+    std::string str2 = std::to_string(s->height());
+    str2.erase(str2.find_last_not_of('0') + 1, std::string::npos);
+    str2.erase(str2.find_last_not_of('.') + 1, std::string::npos);
+    
+    
+    std::string sProperties = "Rong=" + str1 + ", Cao=" + str2;
+
+    std::cout << " | " << std::setw(15) << std::left << "Hinh chu nhat" << " | "
+        << std::setw(30) << std::left << sProperties
+        << " | " << "Chu vi=" << std::setw(7) << std::left << std::fixed << std::setprecision(2)
+        << s->getPerimeter() << " | " << "Dien tich=" << std::setw(7) << std::left << std::fixed
+        << std::setprecision(2) << s->getArea() << " |";
 }
 
 void PrintRectangleWithRawProperties::print( Shape* p) {
     const Rectangle* s = dynamic_cast<const Rectangle*> (p);
-    std::wstring sProperties = L"Rộng=" + std::to_wstring(s->width()) + L", Cao=" + std::to_wstring(s->height());
-    std::wcout << L"Hình chữ nhật: " << sProperties;
+
+    std::string str1 = std::to_string(s->width());
+    str1.erase(str1.find_last_not_of('0') + 1, std::string::npos);
+    str1.erase(str1.find_last_not_of('.') + 1, std::string::npos);
+
+    std::string str2 = std::to_string(s->height());
+    str2.erase(str2.find_last_not_of('0') + 1, std::string::npos);
+    str2.erase(str2.find_last_not_of('.') + 1, std::string::npos);
+
+
+    std::string sProperties = "Rong=" + str1 + ", Cao=" + str2;
+    std::cout << "Hinh chu nhat: " << sProperties;
 }

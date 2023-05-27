@@ -13,7 +13,7 @@ private:
 
 	std::vector<Shape*> _shapesList;
 	int _unreadableCount;
-	bool _ascendingCompare(Shape*, Shape*);
+
 public:
 	FileExtracter();
 
@@ -21,7 +21,7 @@ public:
 
 	void read(const std::string) noexcept(false);
 	void sortByArea();
-	void printWithCaculatedProperties();
+	void printWithTableList();
 
 
 public:
