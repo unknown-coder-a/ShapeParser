@@ -18,20 +18,26 @@ public:
 
 public:
 
-	//tính diện tích của hình tròn
+	/// <summary>
+	/// calculate area
+	/// </summary>
+	/// <returns>Circle area</returns>
+	/// 
 	double getArea() const override;
-
-	//tính chu vi của hình tròn
+	/// <summary>
+	/// calculate perimeter
+	/// </summary>
+	/// <returns>Circle perimeter</returns>
 	double getPerimeter() const override;
 
 
 	/// <summary>
-	/// dùng để in kết quả sau khi parse
+	/// print result after parse
 	/// </summary>
 	virtual void printWithRawProperties();
 
 	/// <summary>
-	/// dùng để in thông tin chi tiết
+	/// print details infomation
 	/// </summary>
 	virtual void printWithCalculatedProperties();
 };

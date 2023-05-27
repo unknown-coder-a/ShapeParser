@@ -16,19 +16,13 @@ ParserFactory* ParserFactory::getInstance() {
 	return _instance;
 }
 
-void ParserFactory::registerWith(std::string type, IParser* pser) {
+void ParserFactory::registerWith(std::string type, std::shared_ptr<IParser> pser) {
 	if(_prototypes.contains(type)){
 		return;
 	}
 	_prototypes.insert({ type, pser });
 }
 
-IParser* ParserFactory::select(std::string type) {
-	IParser* parser = nullptr;
-
-	if (_prototypes.contains(type)) {
-		parser = _prototypes[type];
-	}
-
-	return parser;
+std::shared_ptr<IParser> ParserFactory::select(std::string type) {
+	return _prototypes.contains(type) ? _prototypes[type] : nullptr;
 }

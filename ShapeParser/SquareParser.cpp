@@ -2,7 +2,7 @@
 #include "Square.h"
 #include <regex>
 
-Shape* SquareParser::parse(std::string data) {
+std::shared_ptr<Shape> SquareParser::parse(std::string data) {
     std::regex pattern("Square: a=([0-9.]+)");
     std::smatch matches;
 
@@ -11,8 +11,7 @@ Shape* SquareParser::parse(std::string data) {
         float edge = stof(matches[1].str());
 
 
-        Shape* result = new Square(edge);
-        return result;
+        return std::make_shared<Square>(Square(edge));
     }
     else {
         throw std::runtime_error("No matches found.");

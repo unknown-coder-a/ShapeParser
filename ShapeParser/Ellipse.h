@@ -21,25 +21,26 @@ public:
 
 public:
 
-    /// <summary>
-    /// hàm tính diện tích
-    /// </summary>
-    /// <returns>diện tích</returns>
-    double getArea() const;
+	/// <summary>
+	/// calculate area
+	/// </summary>
+	/// <returns>Ellipse area</returns>
+	/// 
+	double getArea() const override;
+	/// <summary>
+	/// calculate perimeter
+	/// </summary>
+	/// <returns>Ellipse perimeter</returns>
+	double getPerimeter() const override;
 
-    /// <summary>
-    /// hàm tính chu vi
-    /// </summary>
-    /// <returns>chu vi</returns>
-    double getPerimeter() const;
 
-    /// <summary>
-    /// in ra kết quả sau khi parse
-    /// </summary>
-    virtual void printWithRawProperties();
+	/// <summary>
+	/// print result after parse
+	/// </summary>
+	virtual void printWithRawProperties();
 
-    /// <summary>
-    /// in ra thông tin chi tiết
-    /// </summary>
-    virtual void printWithCalculatedProperties();
+	/// <summary>
+	/// print details infomation
+	/// </summary>
+	virtual void printWithCalculatedProperties();
 };

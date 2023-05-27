@@ -13,26 +13,31 @@ private:
 	inline static ParserFactory* _instance { nullptr };
 	ParserFactory();
 	~ParserFactory();
-	std::map<std::string, IParser*> _prototypes;
+	std::map<std::string, std::shared_ptr<IParser>> _prototypes;
 
 public:
 	ParserFactory(const ParserFactory&) = delete;
 	ParserFactory& operator=(const ParserFactory&) = delete;
+
+	/// <summary>
+	/// get the ParserFactory
+	/// </summary>
+	/// <returns>pointer point to only one Factory</returns>
 	static ParserFactory* getInstance();
 
 public:
 	/// <summary>
-	/// Hàm đăng ký shape parser với tên string tương ứng
+	/// regist an shared_ptr of concrete IParser with the name "type"
 	/// </summary>
-	/// <param name="type">tên đăng ký</param>
+	/// <param name="type">type name</param>
 	/// <param name="pser">concrete parser pointer</param>
-	void registerWith(std::string type, IParser* pser);
+	void registerWith(std::string type, std::shared_ptr<IParser> pser);
 
 	/// <summary>
-	/// Hàm cho
+	/// select concrete Parser Shared_ptr
 	/// </summary>
-	/// <param name=""></param>
-	/// <returns></returns>
-	IParser* select(std::string);
+	/// <param name="type">the name was registed</param>
+	/// <returns>concrete shared pointer IParser</returns>
+	std::shared_ptr<IParser> select(std::string type);
 };
 

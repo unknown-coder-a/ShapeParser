@@ -2,7 +2,7 @@
 #include "Ellipse.h"
 #include <regex>
 
-Shape* EllipseParser::parse(std::string data) {
+std::shared_ptr<Shape>  EllipseParser::parse(std::string data) {
     std::regex pattern("Ellipse: a=([0-9.]+), b=([0-9.]+)");
     std::smatch matches;
 
@@ -11,8 +11,8 @@ Shape* EllipseParser::parse(std::string data) {
         float minorAxis = stof(matches[1].str());
         float majorAxis = stof(matches[2].str());
 
-        Shape* result = new Ellipse(minorAxis, majorAxis);
-        return result;
+        return std::make_shared<Ellipse>(Ellipse(minorAxis, majorAxis));
+        
     }
     else {
         throw std::runtime_error("No matches found.");

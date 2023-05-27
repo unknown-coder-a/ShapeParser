@@ -5,7 +5,7 @@ class PrintEllipseWithCalculatedProperties : public IPrint
 {
 public:
 	/// <summary>
-	/// Xuất ra thông số cơ bản, chu vi và diện tích
+	/// Print base properties, area, perimeter, name of shape 
 	/// </summary>
 	/// <param name="p">Shape*, define as Ellipse*</param>
 	void print(Shape* p) override;
@@ -14,7 +14,7 @@ public:
 class PrintEllipseWithRawProperties : public IPrint {
 public:
 	/// <summary>
-	/// Xuất ra thông số cơ bản
+	/// Print base properties, name of shape 
 	/// </summary>
 	/// <param name="p">Shape*, define as Ellipse*</param>
 	void print(Shape* p) override;

@@ -9,3 +9,8 @@ Ellipse: a=1, b=2
 Triangle: a=3, b=4, c=5
 Rhombus: d1=5, d2=10
 Rectangle: w=4, h=23
+TEST UNREADABLE
+Circle: test
+Square: a=-1
+Triangle: a=3, b=1, c=2
+previous line not a triangle, unreadableCount must be 5

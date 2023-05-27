@@ -2,7 +2,7 @@
 #include "Rectangle.h"
 #include <regex>
 
-Shape* RectangleParser::parse(std::string data) {
+std::shared_ptr<Shape> RectangleParser::parse(std::string data) {
     std::regex pattern("Rectangle: w=([0-9.]+), h=([0-9.]+)");
     std::smatch matches;
 
@@ -11,8 +11,7 @@ Shape* RectangleParser::parse(std::string data) {
         float width = stof(matches[1].str());
         float height = stof(matches[2].str());
 
-        Shape* result = new Rectangle(width, height);
-        return result;
+        return std::make_shared<Rectangle>( Rectangle(width, height));
     }
     else {
         throw std::runtime_error("No matches found.");

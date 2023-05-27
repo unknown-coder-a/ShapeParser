@@ -11,7 +11,7 @@ class FileExtracter
 {
 private:
 
-	std::vector<Shape*> _shapesList;
+	std::vector<std::shared_ptr<Shape>> _shapesList;
 	int _unreadableCount;
 
 public:
@@ -20,31 +20,31 @@ public:
 public:
 
 	/// <summary>
-	/// Hàm đọc file và lưu kết quả vào _shapelist, _unreadableCount, và xuất kết quả đọc được ra console
-	/// hàm xử lý exception khi parse
-	/// và throw exception nếu không mở được file
+	/// Read file and stored into _shapeList, _unreadableCount, and print result to console
+	/// This method handle exeption that parse method throw
+	/// Thow exception when cannot open file
 	/// </summary>
-	/// <param name="">tên file</param>
+	/// <param name="">filedirectory</param>
 	void read(const std::string) noexcept(false);
 
 	/// <summary>
-	/// sắp xếp shapesList theo diện tích tăng dần
+	/// Sort _shapeList by area ascendingly
 	/// </summary>
 	void sortByArea();
 
 	/// <summary>
-	/// In thông tin chi tiết ra console
+	/// print properties, perimeter, area as table to console
 	/// </summary>
 	void printWithTableList();
 
 
 public:
 	//getter
-	std::vector<Shape*> shapesList();
+	const std::vector<std::shared_ptr<Shape>> shapesList() const;
 	int unreadableCount();
 
 	//setter
-	void setList(std::vector<Shape*> list);
+	void setList(std::vector<std::shared_ptr<Shape>> list);
 	void setUnreadableCount(int);
 
 };

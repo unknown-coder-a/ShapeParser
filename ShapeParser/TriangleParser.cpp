@@ -2,7 +2,7 @@
 #include "Triangle.h"
 #include <regex>
 
-Shape* TriangleParser::parse(std::string data) {
+std::shared_ptr<Shape>  TriangleParser::parse(std::string data) {
     std::regex pattern("Triangle: a=([0-9.]+), b=([0-9.]+), c=([0-9.]+)");
     std::smatch matches;
 
@@ -16,8 +16,7 @@ Shape* TriangleParser::parse(std::string data) {
             throw std::exception("Not three side of a triangle");
         }
 
-        Shape* result = new Triangle(sideA, sideB, sideC);
-        return result;
+        return std::make_shared<Triangle>(Triangle(sideA, sideB, sideC));
     }
     else {
         throw std::runtime_error("No matches found.");

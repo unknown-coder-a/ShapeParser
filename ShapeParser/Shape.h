@@ -8,17 +8,32 @@ protected:
 public:
 	Shape();
 public:
-	virtual double getArea() const = 0;
-	virtual double getPerimeter() const = 0;
-
-
-public:
-	//getter setter
+	//setter
 	void setPrinter(std::unique_ptr<IPrint> printer_);
 
-	virtual void printWithRawProperties() = 0;
-	virtual void printWithCalculatedProperties() = 0;
+public:
 
+	/// <summary>
+	/// caculate area
+	/// </summary>
+	/// <returns>area of concrete shape </returns>
+	virtual double getArea() const = 0;
+
+	/// <summary>
+	/// calculate perimeter
+	/// </summary>
+	/// <returns>perimeter of concrete shape</returns>
+	virtual double getPerimeter() const = 0;
+
+	/// <summary>
+	/// print result after parse
+	/// </summary>
+	virtual void printWithRawProperties() = 0;
+
+	/// <summary>
+	/// print detail infomation as table
+	/// </summary>
+	virtual void printWithCalculatedProperties() = 0;
 };
 
 

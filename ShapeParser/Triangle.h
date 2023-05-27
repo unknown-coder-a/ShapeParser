@@ -23,10 +23,27 @@ public:
 	double edgeC() const;
 
 public:
+	/// <summary>
+	/// calculate area
+	/// </summary>
+	/// <returns>Triangle area</returns>
+	/// 
 	double getArea() const override;
+	/// <summary>
+	/// calculate perimeter
+	/// </summary>
+	/// <returns>Triangle perimeter</returns>
 	double getPerimeter() const override;
 
+
+	/// <summary>
+	/// print result after parse
+	/// </summary>
 	virtual void printWithRawProperties();
+
+	/// <summary>
+	/// print details infomation
+	/// </summary>
 	virtual void printWithCalculatedProperties();
 };
 

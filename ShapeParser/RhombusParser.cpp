@@ -2,7 +2,7 @@
 #include "Rhombus.h"
 #include <regex>
 
-Shape* RhombusParser::parse(std::string data) {
+std::shared_ptr<Shape> RhombusParser::parse(std::string data) {
     std::regex pattern("Rhombus: d1=([0-9.]+), d2=([0-9.]+)");
     std::smatch matches;
 
@@ -11,8 +11,7 @@ Shape* RhombusParser::parse(std::string data) {
         float diagonal1 = stof(matches[1].str());
         float diagonal2 = stof(matches[2].str());
 
-        Shape* result = new Rhombus(diagonal1, diagonal2);
-        return result;
+        return std::make_shared<Rhombus>(Rhombus(diagonal1, diagonal2));
     }
     else {
         throw std::runtime_error("No matches found.");

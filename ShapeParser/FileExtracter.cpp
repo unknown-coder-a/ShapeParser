@@ -21,36 +21,42 @@ void FileExtracter::read(const std::string fileName) {
 	if (!file.is_open()) {
 		throw std::exception("Can not open file!\n");
 	}	
-	IParser* ip = nullptr;
+	
 	ParserFactory* pf = ParserFactory::getInstance();
-	pf->registerWith("Circle", new CircleParser);
-	pf->registerWith("Square", new SquareParser);
-	pf->registerWith("Triangle", new TriangleParser);
-	pf->registerWith("Rectangle", new RectangleParser);
-	pf->registerWith("Rhombus", new RhombusParser);
-	pf->registerWith("Ellipse", new EllipseParser);
+	pf->registerWith("Circle", std::make_shared<CircleParser>(CircleParser()));
+	pf->registerWith("Square", std::make_shared<SquareParser>(SquareParser()));
+	pf->registerWith("Triangle", std::make_shared<TriangleParser>(TriangleParser()));
+	pf->registerWith("Rectangle", std::make_shared<RectangleParser>(RectangleParser()));
+	pf->registerWith("Rhombus", std::make_shared<RhombusParser>(RhombusParser()));
+	pf->registerWith("Ellipse", std::make_shared<EllipseParser>(EllipseParser()));
 
 	std::string line;
 	std::cout << "Dang doc tap tin shapes.txt...";
+	std::shared_ptr<IParser> pser;
 	int count = 0;
 	while(std::getline(file, line)){
 		std::string name;
 
 		int i = 0;
-		while (line[i] != ':') {
-			name.push_back(line[i++]);
+
+		size_t pos = line.find_first_of(':');
+		if (pos == std::string::npos) {
+			_unreadableCount++;
+			continue;
 		}
+		
+		name = line.substr(0, pos);
 
-		ip = pf->select(name);
+		pser = pf->select(name);
 
-		if (ip == nullptr) {
+		if (pser == nullptr) {
 			_unreadableCount++;
 		}
 		else {
 			
 			try
 			{
-				_shapesList.push_back(ip->parse(line));
+				_shapesList.push_back(pser->parse(line));
 				count++;
 			}
 			catch (const std::exception&)
@@ -69,7 +75,7 @@ void FileExtracter::read(const std::string fileName) {
 
 void FileExtracter::sortByArea(){
 	
-	std::sort(_shapesList.begin(), _shapesList.end(), [](Shape*& a, Shape*& b) { return a->getArea() < b->getArea(); });
+	std::sort(_shapesList.begin(), _shapesList.end(), [](std::shared_ptr<Shape>& a, std::shared_ptr<Shape>& b) { return a->getArea() < b->getArea(); });
 }
 void FileExtracter::printWithTableList() {
 
@@ -83,7 +89,7 @@ void FileExtracter::printWithTableList() {
 }
 
 
-std::vector<Shape*> FileExtracter::shapesList() {
+const std::vector<std::shared_ptr<Shape>> FileExtracter::shapesList() const {
 	return _shapesList;
 }
 
@@ -91,7 +97,7 @@ int FileExtracter::unreadableCount() {
 	return _unreadableCount;
 }
 
-void FileExtracter::setList(std::vector<Shape*> list) {
+void FileExtracter::setList(std::vector<std::shared_ptr<Shape>> list) {
 	_shapesList = list;
 }
 void FileExtracter::setUnreadableCount(int value) {
