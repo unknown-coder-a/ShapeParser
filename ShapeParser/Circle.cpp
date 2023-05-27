@@ -8,23 +8,23 @@ Circle::Circle() {
 	_radius = 0;
 }
 
-Circle::Circle(float value) {
+Circle::Circle(double value) {
 	_radius = value;
 }
 
-float Circle::radius() const {
+double Circle::radius() const {
 	return _radius;
 }
 
-void Circle::setRadius(float value) {
+void Circle::setRadius(double value) {
 	_radius = value;
 }
 
-float Circle::getArea() const {
+double Circle::getArea() const {
 	return M_PI * _radius;
 }
 
-float Circle::getPerimeter() const {
+double Circle::getPerimeter() const {
 	return M_PI * 2 * _radius;
 }
 

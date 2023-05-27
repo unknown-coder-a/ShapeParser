@@ -5,32 +5,32 @@ Rectangle::Rectangle(){
 	_width = _height = 0;
 }
 
-Rectangle::Rectangle(float width, float height) {
+Rectangle::Rectangle(double width, double height) {
 	_width = width;
 	_height = height;
 }
 
-void Rectangle::setHeight(float value) {
+void Rectangle::setHeight(double value) {
 	_height = value;
 }
 
-void Rectangle::setWidth(float value) {
+void Rectangle::setWidth(double value) {
 	_width = value;
 }
 
-float Rectangle::height() const {
+double Rectangle::height() const {
 	return _height;
 }
 
-float Rectangle::width() const {
+double Rectangle::width() const {
 	return _width;
 }
 
-float Rectangle::getArea() const {
+double Rectangle::getArea() const {
 	return _width * _height;
 }
 
-float Rectangle::getPerimeter() const {
+double Rectangle::getPerimeter() const {
 	return (_width + _height) * 2;
 }
 

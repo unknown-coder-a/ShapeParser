@@ -3,24 +3,24 @@
 
 class Ellipse : public Shape{
 private:
-    float _minorAxis;
-    float _majorAxis;
+    double _minorAxis;
+    double _majorAxis;
 
 public:
     Ellipse();
-    Ellipse(float, float);
+    Ellipse(double, double);
 
 public:
     //setter
-    void setMajorAxis(float value);
-    void setMinorAxis(float value);
+    void setMajorAxis(double value);
+    void setMinorAxis(double value);
     //getter
-    float minorAxis() const;
-    float majorAxis() const;
+    double minorAxis() const;
+    double majorAxis() const;
 
 public:
-    float getArea() const;
-    float getPerimeter() const;
+    double getArea() const;
+    double getPerimeter() const;
 
     virtual void printWithRawProperties();
     virtual void printWithCalculatedProperties();

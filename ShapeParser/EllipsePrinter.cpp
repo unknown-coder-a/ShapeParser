@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-void PrintEllipseWithCalculatedProperties::print(const Shape*& p) {
+void PrintEllipseWithCalculatedProperties::print( Shape* p) {
     const Ellipse* s = dynamic_cast<const Ellipse*> (p);
 
 
@@ -18,7 +18,7 @@ void PrintEllipseWithCalculatedProperties::print(const Shape*& p) {
         << std::setprecision(2) << s->getArea() << " |" << std::endl;
 }
 
-void PrintEllipseWithRawProperties::print(const Shape*& p) {
+void PrintEllipseWithRawProperties::print( Shape* p) {
     const Ellipse* s = dynamic_cast<const Ellipse*> (p);
     std::wstring sProperties = L"Trục nhỏ=" + std::to_wstring(s->minorAxis()) + L", Trục lớn=" + std::to_wstring(s->majorAxis());
     std::wcout << L"Hình Ê líp: " << sProperties;

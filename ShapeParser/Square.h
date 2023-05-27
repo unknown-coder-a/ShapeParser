@@ -3,19 +3,19 @@
 
 class Square : public Shape {
 private:
-	float _edge;
+	double _edge;
 
 public:
 	Square();
-	Square(float);
+	Square(double);
 
 public:
-	float edge() const ;
-	void setEdge(float);
+	double edge() const ;
+	void setEdge(double);
 
 public:
-	float getPerimeter() const override;
-	float getArea() const override;
+	double getPerimeter() const override;
+	double getArea() const override;
 
 	virtual void printWithRawProperties();
 	virtual void printWithCalculatedProperties();

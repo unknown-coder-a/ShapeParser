@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-void PrintRhombusWithCalculatedProperties::print(const Shape*& p) {
+void PrintRhombusWithCalculatedProperties::print( Shape* p) {
     const Rhombus* s = dynamic_cast<const Rhombus*> (p);
 
 
@@ -18,7 +18,7 @@ void PrintRhombusWithCalculatedProperties::print(const Shape*& p) {
         << std::setprecision(2) << s->getArea() << " |" << std::endl;
 }
 
-void PrintRhombusWithRawProperties::print(const Shape*& p) {
+void PrintRhombusWithRawProperties::print( Shape* p) {
     const Rhombus* s = dynamic_cast<const Rhombus*> (p);
     std::wstring sProperties = L"Trục 1=" + std::to_wstring(s->diagonal1()) + L", Trục 2=" + std::to_wstring(s->diagonal2());
     std::wcout << L"Hình chữ nhật: " << sProperties;

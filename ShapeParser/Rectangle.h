@@ -4,23 +4,23 @@
 
 class Rectangle :public Shape {
 private:
-	float _width;
-	float _height;
+	double _width;
+	double _height;
 
 public:
 	Rectangle();
-	Rectangle(float, float);
+	Rectangle(double, double);
 
 public:
-	void setWidth(float);
-	void setHeight(float);
+	void setWidth(double);
+	void setHeight(double);
 
-	float width() const;
-	float height() const;
+	double width() const;
+	double height() const;
 
 public:
-	float getArea() const override;
-	float getPerimeter() const override;
+	double getArea() const override;
+	double getPerimeter() const override;
 
 	virtual void printWithRawProperties();
 	virtual void printWithCalculatedProperties();

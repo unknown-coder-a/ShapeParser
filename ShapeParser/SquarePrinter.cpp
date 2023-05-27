@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-void PrintSquareWithCalculatedProperties::print(const Shape*& p) {
+void PrintSquareWithCalculatedProperties::print( Shape* p) {
     const Square* s = dynamic_cast<const Square*> (p);
 
 
@@ -18,7 +18,7 @@ void PrintSquareWithCalculatedProperties::print(const Shape*& p) {
         << std::setprecision(2) << s->getArea() << " |" << std::endl;
 }
 
-void PrintSquareWithRawProperties::print(const Shape*& p) {
+void PrintSquareWithRawProperties::print( Shape* p) {
     const Square* s = dynamic_cast<const Square*> (p);
 
     std::wstring sProperties = L"Cạnh=" + std::to_wstring(s->edge());

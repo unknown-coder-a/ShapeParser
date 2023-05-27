@@ -6,13 +6,14 @@
 class ParserFactory
 {
 private:
-	static ParserFactory* _pinstance;
-	std::map<std::string, IParser*> _prototypes;
+	inline static ParserFactory* _instance { nullptr };
 	ParserFactory();
+	~ParserFactory();
+	std::map<std::string, IParser*> _prototypes;
 
 public:
-	ParserFactory(ParserFactory& copy) = delete;
-	void operator=(const ParserFactory& right) = delete;
+	ParserFactory(const ParserFactory&) = delete;
+	ParserFactory& operator=(const ParserFactory&) = delete;
 	static ParserFactory* getInstance();
 
 public:

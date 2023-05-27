@@ -2,14 +2,18 @@
 #include "ParserFactory.h"
 
 ParserFactory::ParserFactory() {
-	_pinstance = nullptr;
+	_instance = nullptr;
+}
+ParserFactory::~ParserFactory() {
+	if (_instance)
+		delete _instance;
 }
 
 ParserFactory* ParserFactory::getInstance() {
-	if (nullptr == _pinstance) {
-		_pinstance = new ParserFactory();
+	if (nullptr == _instance) {
+		_instance = new ParserFactory();
 	}
-	return _pinstance;
+	return _instance;
 }
 
 void ParserFactory::registerWith(std::string type, IParser* pser) {

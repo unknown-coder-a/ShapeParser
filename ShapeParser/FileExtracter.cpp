@@ -1,4 +1,4 @@
-#include "FileExtracter.h"
+﻿#include "FileExtracter.h"
 #include <algorithm>
 #include <iostream>
 
@@ -19,6 +19,8 @@ void FileExtracter::read(const std::string fileName) {
 	ParserFactory* pf = ParserFactory::getInstance();
 
 	std::string line;
+	std::wcout << L"Đang đọc tập tin shapes.txt...";
+	int count = 0;
 	while(std::getline(file, line)){
 		std::string name;
 
@@ -33,33 +35,28 @@ void FileExtracter::read(const std::string fileName) {
 			_unreadableCount++;
 		}
 		else {
+			count++;
 			_shapesList.push_back(ip->parse(line));
+			std::cout << std::endl << count << ". ";
+			_shapesList[count - 1]->printWithRawProperties();
 		}
 	}
-
+	std::wcout << L"\nTìm thấy " << _shapesList.size() << L" hình / " << _shapesList.size() + _unreadableCount << L" hình";
+	std::wcout << L"\nKhông thể đọc được: " << _shapesList.size() << L" hình.";
 	file.close();
 }
 
 void FileExtracter::sortByArea(){
 	
-	std::sort(_shapesList.begin(), _shapesList.end());
+	std::sort(_shapesList.begin(), _shapesList.end(), [](Shape*& a, Shape*& b) { return a->getArea() > b->getArea(); });
 }
 void FileExtracter::printWithCaculatedProperties() {
 
-	int count = _shapesList.size();
+	size_t count = _shapesList.size();
 
 	for (int i = 0; i < count; i++ ) {
 		std::cout << "| " << i;
 		_shapesList[i]->printWithCalculatedProperties();
-		std::cout << std::endl;
-	}
-}
-void FileExtracter::printWithRawProperties() {
-	int count = _shapesList.size();
-
-	for (int i = 0; i < count; i++) {
-		std::cout << i << ". ";
-		_shapesList[i]->printWithRawProperties();
 		std::cout << std::endl;
 	}
 }
@@ -79,3 +76,8 @@ void FileExtracter::setList(std::vector<Shape*> list) {
 void FileExtracter::setUnreadableCount(int value) {
 	_unreadableCount = value;
 }
+
+bool FileExtracter::_ascendingCompare(Shape* a, Shape* b) {
+	return (a->getArea() < b->getArea());
+}
+

@@ -4,27 +4,27 @@
 class Triangle : public Shape
 {
 private:
-	float _edgeA;
-	float _edgeB;
-	float _edgeC;
+	double _edgeA;
+	double _edgeB;
+	double _edgeC;
 public:
 	Triangle();
-	Triangle(float, float, float);
+	Triangle(double, double, double);
 
 public:
 	//setter
-	void setEdgeA(float);
-	void setEdgeB(float);
-	void setEdgeC(float);
+	void setEdgeA(double);
+	void setEdgeB(double);
+	void setEdgeC(double);
 
 	//getter
-	float edgeA() const;
-	float edgeB() const;
-	float edgeC() const;
+	double edgeA() const;
+	double edgeB() const;
+	double edgeC() const;
 
 public:
-	float getArea() const override;
-	float getPerimeter() const override;
+	double getArea() const override;
+	double getPerimeter() const override;
 
 	virtual void printWithRawProperties();
 	virtual void printWithCalculatedProperties();

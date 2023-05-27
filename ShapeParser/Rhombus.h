@@ -4,23 +4,23 @@
 class Rhombus: public Shape
 {
 private:
-	float _diagonal1;
-	float _diagonal2;
+	double _diagonal1;
+	double _diagonal2;
 
 public:
 	Rhombus();
-	Rhombus(float, float);
+	Rhombus(double, double);
 	
 public:
-	float diagonal1() const;
-	float diagonal2() const;
+	double diagonal1() const;
+	double diagonal2() const;
 
-	void setDiagonal1(float);
-	void setDiagonal2(float);
+	void setDiagonal1(double);
+	void setDiagonal2(double);
 
 public:
-	float getPerimeter() const override;
-	float getArea() const override;
+	double getPerimeter() const override;
+	double getArea() const override;
 
 
 	virtual void printWithRawProperties();

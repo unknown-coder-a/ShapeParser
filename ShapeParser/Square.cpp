@@ -5,23 +5,23 @@ Square::Square() {
 	_edge = 0;
 }
 
-Square::Square(float edge) {
+Square::Square(double edge) {
 	_edge = edge;
 }
 
-float Square::edge() const {
+double Square::edge() const {
 	return _edge;
 }
 
-void Square::setEdge(float value) {
+void Square::setEdge(double value) {
 	_edge = value;
 }
 
-float Square::getArea() const {
+double Square::getArea() const {
 	return _edge * _edge;
 }
 
-float Square::getPerimeter() const {
+double Square::getPerimeter() const {
 	return _edge * 4;
 }
 

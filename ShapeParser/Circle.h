@@ -3,19 +3,19 @@
 
 class Circle: public Shape{
 private:
-	float _radius;
+	double _radius;
 
 public:
 	Circle();
-	Circle(float);
+	Circle(double);
 
 public:
-	float radius() const;
-	void setRadius(float);
+	double radius() const;
+	void setRadius(double);
 
 public:
-	float getArea() const override;
-	float getPerimeter() const override;
+	double getArea() const override;
+	double getPerimeter() const override;
 
 	virtual void printWithRawProperties();
 	virtual void printWithCalculatedProperties();

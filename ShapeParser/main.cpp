@@ -21,11 +21,9 @@ int main() {
 		return 1;
 	}
 	
-	reader.printWithRawProperties();
 	reader.sortByArea();
 	reader.printWithCaculatedProperties();
-	//pf->registerWith("Square", new SquareParser);
-	
+
 	std::string line;
 
 }

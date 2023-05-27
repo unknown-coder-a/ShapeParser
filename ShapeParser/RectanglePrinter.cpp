@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-void PrintRectangleWithCalculatedProperties::print(const Shape*& p) {
+void PrintRectangleWithCalculatedProperties::print( Shape* p) {
     const Rectangle* s = dynamic_cast<const Rectangle*> (p);
     
     
@@ -18,7 +18,7 @@ void PrintRectangleWithCalculatedProperties::print(const Shape*& p) {
         << std::setprecision(2) << s->getArea() << " |" << std::endl;
 }
 
-void PrintRectangleWithRawProperties::print(const Shape*& p) {
+void PrintRectangleWithRawProperties::print( Shape* p) {
     const Rectangle* s = dynamic_cast<const Rectangle*> (p);
     std::wstring sProperties = L"Rộng=" + std::to_wstring(s->width()) + L", Cao=" + std::to_wstring(s->height());
     std::wcout << L"Hình chữ nhật: " << sProperties;

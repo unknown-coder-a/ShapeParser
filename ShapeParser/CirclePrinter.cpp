@@ -5,7 +5,7 @@
 #include <iostream>
 
 
-void PrintCircleWithCalculatedProperties::print(const Shape*& p) {
+void PrintCircleWithCalculatedProperties::print( Shape* p) {
     const Circle* s = dynamic_cast<const Circle*> (p);
 
 
@@ -18,7 +18,7 @@ void PrintCircleWithCalculatedProperties::print(const Shape*& p) {
         << std::setprecision(2) << s->getArea() << " |" << std::endl;
 }
 
-void PrintCircleWithRawProperties::print(const Shape*& p) {
+void PrintCircleWithRawProperties::print( Shape* p) {
     const Circle* s = dynamic_cast<const Circle*> (p);
 
     std::wstring sProperties = L"Cạnh=" + std::to_wstring(s->radius());
