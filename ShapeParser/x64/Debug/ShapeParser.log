@@ -1,2 +1,26 @@
-﻿  FileExtracter.cpp
+﻿  Circle.cpp
+  CircleParser.cpp
+  CirclePrinter.cpp
+  Ellipse.cpp
+  EllipseParser.cpp
+  EllipsePrinter.cpp
+  FileExtracter.cpp
+  ParserFactory.cpp
+  Rectangle.cpp
+  RectangleParser.cpp
+  RectanglePrinter.cpp
+  Rhombus.cpp
+  RhombusParser.cpp
+  RhombusPrinter.cpp
+  Shape.cpp
+  Square.cpp
+  SquareParser.cpp
+  SquarePrinter.cpp
+  Triangle.cpp
+  TriangleParser.cpp
+  Generating Code...
+  Compiling...
+  TrianglePrinter.cpp
+  main.cpp
+  Generating Code...
   ShapeParser.vcxproj -> C:\code\ShapeParser\x64\Debug\ShapeParser.exe
