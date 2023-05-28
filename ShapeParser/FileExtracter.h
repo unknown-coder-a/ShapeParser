@@ -7,6 +7,10 @@
 #include <fstream>
 #include <exception>
 
+
+/// <summary>
+/// read file, parse data, print result, store data
+/// </summary>
 class FileExtracter
 {
 private:

@@ -1,4 +1,3 @@
-	/// <param name="data">an original line of data</param>
 #pragma once
 #include "IParser.h"
 

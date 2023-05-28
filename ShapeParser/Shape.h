@@ -1,6 +1,10 @@
 #pragma once
 #include <memory>
 #include "IPrint.h"
+
+/// <summary>
+/// shape base class, had-a IPint
+/// </summary>
 class Shape
 {
 protected:

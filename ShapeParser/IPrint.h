@@ -3,6 +3,9 @@
 //forward declare
 class Shape;
 
+/// <summary>
+/// interface Print, Strategy class
+/// </summary>
 class IPrint
 {
 public:
